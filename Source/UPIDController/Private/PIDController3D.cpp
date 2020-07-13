@@ -57,7 +57,7 @@ void FPIDController3D::Init(bool bClearErrors /*= true*/)
 
 
 // Call the update function pointer
-FORCEINLINE FVector FPIDController3D::Update(const FVector InError, const float InDeltaTime)
+FVector FPIDController3D::Update(const FVector InError, const float InDeltaTime)
 {
 	return (this->*UpdateFunctionPtr)(InError, InDeltaTime);
 }

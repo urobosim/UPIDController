@@ -53,7 +53,7 @@ public:
 	void Init(bool bClearErrors = true);
 
 	// Update the PID loop
-	FORCEINLINE FVector Update(const FVector InError, const float InDeltaTime);
+	FVector Update(const FVector InError, const float InDeltaTime);
 
 	// Update as a PID controller
 	FORCEINLINE FVector UpdateAsPID(const FVector InError, const float InDeltaTime);
@@ -74,4 +74,3 @@ private:
 	// Integral error
 	FVector IErr;
 };
-
